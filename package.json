@@ -1,0 +1,83 @@
+{
+  "name": "nextjs-template",
+  "private": true,
+  "author": "evfjunior",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evfjunior/nextjs-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/evfjunior/nextjs-template/issues"
+  },
+  "homepage": "https://github.com/evfjunior/nextjs-template#readme",
+  "description": "A complete project structure to create React web applications using NextJS and Typescript.",
+  "keywords": [
+    "nextjs",
+    "reactjs",
+    "typescript",
+    "template"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "commit": "cz",
+    "generate": "plop",
+    "lint": "eslint src --max-warnings=0",
+    "prepare": "husky install",
+    "storybook": "start-storybook -s ./public -p 6006 --quiet",
+    "storybook:build": "build-storybook -s ./public",
+    "test": "jest --maxWorkers=50%",
+    "test:ci": "jest --colors",
+    "test:watch": "jest --maxWorkers=25% --watch",
+    "typecheck": "tsc --project tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3",
+    "styled-media-query": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@next/eslint-plugin-next": "^12.0.7",
+    "@storybook/addon-actions": "^6.4.8",
+    "@storybook/addon-essentials": "^6.4.8",
+    "@storybook/addon-links": "^6.4.8",
+    "@storybook/builder-webpack5": "^6.4.8",
+    "@storybook/manager-webpack5": "^6.4.8",
+    "@storybook/react": "^6.4.8",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/node": "16.11.11",
+    "@types/react": "17.0.37",
+    "@types/styled-components": "^5.1.16",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-styled-components": "^2.0.2",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "8",
+    "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.3",
+    "jest-styled-components": "^7.0.8",
+    "lint-staged": "^12.1.2",
+    "plop": "^3.0.2",
+    "prettier": "^2.5.1",
+    "typescript": "4.5.2"
+  },
+  "resolutions": {
+    "webpack": "5"
+  }
+}
