@@ -8,7 +8,7 @@ updates:
       time: '07:00'
       timezone: 'America/Recife'
     labels:
-      - github_actions
+      - 'github actions'
 
   - package-ecosystem: 'npm'
     directory: '/'
