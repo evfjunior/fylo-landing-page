@@ -1,22 +1,22 @@
 {
-  "name": "nextjs-template",
+  "name": "fylo-landing-page",
   "private": true,
   "author": "evfjunior",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evfjunior/nextjs-template.git"
+    "url": "git+https://github.com/evfjunior/fylo-landing-page.git"
   },
   "bugs": {
-    "url": "https://github.com/evfjunior/nextjs-template/issues"
+    "url": "https://github.com/evfjunior/fylo-landing-page/issues"
   },
-  "homepage": "https://github.com/evfjunior/nextjs-template#readme",
-  "description": "A complete project structure to create React web applications using NextJS and Typescript.",
+  "homepage": "https://github.com/evfjunior/fylo-landing-page#readme",
+  "description": "A Frontend Mentor Challenge.",
   "keywords": [
+    "frontend-mentor",
     "nextjs",
     "reactjs",
-    "typescript",
-    "template"
+    "typescript"
   ],
   "scripts": {
     "dev": "next dev",
