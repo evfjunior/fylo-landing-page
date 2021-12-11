@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
       background-color: ${theme.colors.bgColor};
       color: ${theme.colors.white};
       font-family: ${theme.font.family.main};
-      font-size: ${theme.font.sizes.small};
+      font-size: ${theme.font.sizes.medium};
       scroll-behavior: smooth;
     }
 
