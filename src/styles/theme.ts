@@ -3,9 +3,14 @@ export const theme = {
     radius: '0.4rem'
   },
   colors: {
-    primary: '#f231a5',
-    black: '#212121',
-    white: '#fafafa'
+    blue: 'hsl(198, 60%, 50%)',
+    cyan: 'hsl(176, 68%, 64%)',
+    red: 'hsl(0, 100%, 63%)',
+    white: 'hsl(0, 0%, 100%)',
+    bgColor: 'hsl(218, 28%, 13%)',
+    footerBg: 'hsl(216, 53%, 9%)',
+    introBg: 'hsl(217, 28%, 15%)',
+    testimonialsBg: 'hsl(219, 30%, 18%)'
   },
   font: {
     family: {
