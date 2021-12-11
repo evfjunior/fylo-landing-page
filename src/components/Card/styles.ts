@@ -18,24 +18,16 @@ export const Container = styled.article`
 
 export const Heading = styled.h2`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.large};
+    font-size: 2rem;
     font-weight: ${theme.font.weight.bold};
     line-height: 2;
-
-    ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.xxlarge};
-    `}
   `}
 `
 
 export const Leading = styled.p`
   ${({ theme }) => css`
     max-width: 45ch;
-    font-size: ${theme.font.sizes.xsmall};
+    font-size: ${theme.font.sizes.medium};
     line-height: 1.6;
-
-    ${media.greaterThan('medium')`
-      font-size: ${theme.font.sizes.medium};
-    `}
   `}
 `
