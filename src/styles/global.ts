@@ -29,7 +29,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
       background-color: ${theme.colors.black};
       color: ${theme.colors.white};
-      font-family: ${theme.font.family};
+      font-family: ${theme.font.family.main};
       font-size: ${theme.font.sizes.small};
       scroll-behavior: smooth;
     }
@@ -49,6 +49,13 @@ export const GlobalStyles = createGlobalStyle`
 
     button {
       -webkit-tap-highlight-color: transparent;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: ${theme.font.family.heading};
+      font-weight: ${theme.font.weight.bold};
     }
   `}
 `

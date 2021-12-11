@@ -8,11 +8,14 @@ export const theme = {
     white: '#fafafa'
   },
   font: {
-    family: "'Poppins', sans-serif",
+    family: {
+      main: "'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif",
+      heading:
+        "Raleway, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif"
+    },
     weight: {
       normal: 400,
-      bold: 600,
-      light: 300
+      bold: 700
     },
     sizes: {
       xsmall: '1.2rem',
