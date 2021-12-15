@@ -1,6 +1,6 @@
 export const theme = {
   border: {
-    radius: '0.4rem'
+    radius: '5rem'
   },
   colors: {
     blue: 'hsl(198, 60%, 50%)',
