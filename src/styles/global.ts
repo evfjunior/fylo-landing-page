@@ -66,12 +66,11 @@ export const GlobalStyles = createGlobalStyle`
       scroll-behavior: smooth;
     }
 
-    a,
-    button,
     input,
     select,
     textarea {
       font: inherit;
+      outline: none;
     }
 
     a {
@@ -80,6 +79,10 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     button {
+      border: none;
+      outline: none;
+      font-size: inherit;
+      cursor: pointer;
       -webkit-tap-highlight-color: transparent;
     }
 
