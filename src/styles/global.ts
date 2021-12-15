@@ -2,6 +2,38 @@ import { createGlobalStyle, css } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
   ${({ theme }) => css`
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Open Sans Regular'), local('Open-Sans-Regular'),
+        url('/fonts/open-sans-v27-latin-regular.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Open Sans Bold'), local('Open-Sans-Bold'),
+        url('/fonts/open-sans-v27-latin-700.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Raleway Regular'), local('Raleway-Regular'),
+        url('/fonts/raleway-v22-latin-regular.woff2') format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Raleway Bold'), local('Raleway-Bold'),
+        url('/fonts/raleway-v22-latin-700.woff2') format('woff2');
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
