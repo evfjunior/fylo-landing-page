@@ -39,6 +39,7 @@ export const parameters = {
       date: /Date$/
     }
   },
+  darkMode: { current: 'dark' },
   viewport: {
     viewports: customViewports,
     defaultViewport: 'iPhone11Pro'
