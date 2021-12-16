@@ -1,3 +1,4 @@
+import * as NextImage from 'next/image'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from 'styles/global'
 
@@ -30,6 +31,13 @@ const customViewports = {
     type: 'tablet'
   }
 }
+
+const OriginaNextImage = NextImage.default
+
+Object.defineProperty(NextImage, 'default', {
+  configurable: true,
+  value: props => <OriginaNextImage {...props} unoptimized />
+})
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
