@@ -27,4 +27,19 @@ describe('<Button />', () => {
     expect(button).toBeInTheDocument()
     expect(button).toHaveAttribute('href', '/link')
   })
+
+  it('renders the button as a ghost link with an icon correctly', () => {
+    render(
+      <Button as="a" href="/link" ghost>
+        ghost link
+      </Button>
+    )
+
+    const button = screen.getByRole('link', { name: /ghost link/i })
+    const icon = screen.getByTestId(/icon/i)
+
+    expect(button).toBeInTheDocument()
+    expect(button).toHaveAttribute('href', '/link')
+    expect(icon).toBeInTheDocument()
+  })
 })
