@@ -9,8 +9,13 @@ export default {
     children: {
       type: 'string'
     },
-    control: {
-      disabled: {
+    disabled: {
+      control: {
+        type: 'boolean'
+      }
+    },
+    ghost: {
+      control: {
         type: 'boolean'
       }
     }
@@ -30,4 +35,13 @@ AsLink.args = {
   children: 'Link',
   as: 'a',
   href: '/link'
+}
+
+export const AsGhostLink: Story<ButtonProps> = (args) => <Button {...args} />
+
+AsGhostLink.args = {
+  children: 'Ghost link',
+  as: 'a',
+  href: '/link',
+  ghost: true
 }

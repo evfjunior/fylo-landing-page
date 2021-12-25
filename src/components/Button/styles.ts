@@ -10,11 +10,37 @@ const Modifiers = {
       filter: saturate(0%);
       cursor: not-allowed;
     }
+  `,
+  ghost: (theme: DefaultTheme) => css`
+    width: auto;
+    padding: 0.4rem 0;
+    border-radius: 0;
+    border-bottom: 0.1rem solid ${theme.colors.cyan};
+    background: transparent;
+    color: ${theme.colors.cyan};
+    font-family: ${theme.font.family.main};
+    font-size: 1.2rem;
+    font-weight: ${theme.font.weight.normal};
+    text-transform: none;
+
+    span {
+      margin-left: ${theme.spacings.xxsmall};
+    }
+
+    &:hover {
+      border-bottom-color: ${theme.colors.white};
+      color: ${theme.colors.white};
+    }
+
+    ${media.greaterThan('large')`
+      padding: 0.4rem 0;
+      font-size: 1.4rem;
+    `}
   `
 }
 
 export const Container = styled.button<ButtonProps>`
-  ${({ theme, disabled }) => css`
+  ${({ theme, disabled, ghost }) => css`
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -52,5 +78,7 @@ export const Container = styled.button<ButtonProps>`
       max-width: 28rem;
       font-size: 1.6rem;
     `}
+
+    ${ghost && Modifiers.ghost(theme)}
   `}
 `
