@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Logo } from 'components/Logo'
+// import { Logo } from 'components/Logo'
 
 import * as S from './styles'
 
@@ -13,7 +13,7 @@ export function Menu() {
 
   return (
     <S.Container>
-      <Logo />
+      {/* <Logo /> */}
 
       <S.Navigation>
         <ul>
